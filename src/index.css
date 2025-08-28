@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Calligraffitti&family=Changa:wght@200..800&family=Creepster&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Fredericka+the+Great&family=Libre+Barcode+39&family=Marcellus&family=Merienda:wght@300..900&family=Monoton&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+
+}
+
+.body{
+  height: 100%;
+  width: 100%;
+}
+
+*::selection {
+  background-color: #a11e49;
+  color: #fff;
+}
+
+
+/* WebKit browsers */
+*::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #a11e49;
+  border-radius: 9999px;
+}
+
+
+
+
+
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* normal css classes */
+.displayFlex {
+  display: flex;
+}
+
+
+
+/* fontFamily */
+
+.playFair {
+  font-family: "Playfair Display", serif;
+}
+
+.openSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.bebasNeue {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.calligraffitti {
+  font-family: "Calligraffitti", cursive;
+}
+
+.notoSerifDisplay {
+  font-family: "Noto Serif Display", serif;
+}
+
+.rajdhani {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.dmSerifDisplay {
+  font-family: "DM Serif Display", serif;
+}
+
+.abrilFatface {
+  font-family: "Abril Fatface", serif;
+}
+
+.marcellus {
+  font-family: "Marcellus", serif;
+}
+
+.merienda {
+  font-family: "Merienda", cursive;
+}
+
+.changa {
+  font-family: "Changa", sans-serif;
+}
+
+.rubikDurt {
+  font-family: "Rubik Dirt", system-ui;
+}
+
+.dmSerifText {
+  font-family: "DM Serif Text", serif;
+}
+
+.barcode {
+  font-family: "Libre Barcode 39", system-ui;
+}
+
+.creepster {
+  font-family: "Creepster", system-ui;
+}
+
+.monoton {
+  font-family: "Monoton", sans-serif;
+}
+
+.vt323 {
+  font-family: "VT323", monospace;
+}
+
+.frederickaTheGreat {
+  font-family: "Fredericka the Great", serif;
+}
+
+.service-card {
+  box-shadow: 0 0 10px rgba(230, 227, 227, 0.673);
+  border: 1px solid #444;
+}
+
+.service-card h4 {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: underline;
+}
+
+.social-links h5 {
+  margin-bottom: 10px;
+}
+
+.list-inline-item a:hover {
+  color: #0d6efd;
+}
+
+.whyHireMeList {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+}
