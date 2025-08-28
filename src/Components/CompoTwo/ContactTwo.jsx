@@ -16,7 +16,7 @@ const ContactTwo = () => {
     setIsSubmitting(true)
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/contact", { name, contact, message });
+      const res = await axios.post("https://sachin-bhadoriya-mern-stack-developer.onrender.com/api/contact", { name, contact, message });
       setSuccessMsg(res.data.message);
       setName("");
       setContact("");
