@@ -8,6 +8,7 @@ import Skills from "./CompoTwo/Skills";
 import HireMeTwo from "./CompoTwo/HireMeTwo";
 import ServiceTwo from "./CompoTwo/ServiceTwo";
 import Cv from "./CompoTwo/Cv";
+import Cvp from "./CompoTwo/Cvp";
 
 const Main = () => {
   return (
@@ -24,6 +25,7 @@ const Main = () => {
         <Route path="hireme" element={<HireMeTwo />} />
         {/* <Route path="service" element={<ServiceTwo />} /> */}
         <Route path="/cv" element={<Cv />} />
+        {/* <Route path="/cvp" element={<Cvp />} /> */}
       </Routes>
     </>
   );

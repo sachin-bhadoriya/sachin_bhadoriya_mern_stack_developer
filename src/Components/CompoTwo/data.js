@@ -8,8 +8,6 @@ export const HeroData = {
   ctaSecondary: "Contact Me",
 };
 
-
-
 // data/about.js
 export const AboutData = {
   heading: "About Me",
@@ -36,20 +34,29 @@ I’ve built and deployed full-stack projects like a hotel booking system with l
   ]
 }
 
-
-
-
-// data/skill.js
-export const SkillsData = {
-  heading: "Skills",
-  categories: {
-    frontend: ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind CSS", "React.js", "Three.js"],
-    backend: ["Node.js", "Express.js", "React Native"],
-    database: ["MongoDB", "MySQL", "SQL"],
-    tools: ["VS Code", "Vercel", "Render", "Railway"],
-    others: ["MS Office", "Adobe Photoshop", "Canva"]
-  }
-}
+// skills data
+export const SkillsData = [
+  {
+    title: "Frontend",
+    skill: [" HTML", " CSS", " JavaScript", " Bootstrap", " React.js"]
+  },
+  {
+    title: "Backend & Programming Language",
+    skill: [" Node.js", " Express.js", " React Native"]
+  },
+  {
+    title: "Database",
+    skill: [" MongoDB"]
+  },
+  {
+    title: "Tool & Platforms",
+    skill: [" VS Code", " Vercel", " Render", " Railway"]
+  },
+  {
+    title: "Other Skills",
+    skill: [" MS Office", " Adobe Photoshop", " Canva"]
+  },
+]
 
 // data/serviceData.js
 export const ServiceData = [
@@ -95,3 +102,52 @@ export const WhyHireMeData = {
     "Adaptable and quick learner, always eager to explore new technologies and improve coding standards.",
   ],
 };
+// cv project data
+export const CvDataProjects = [
+  {
+    title: "Hill View Escape – Hotel Booking Website",
+    description: "Developed and deployed a full-stack hotel booking website with live room reservation functionality. Integrated email automation to send instant booking confirmations to users. Built using React for the frontend, Node.js/MongoDB for backend APIs, and hosted on Vercel, Render & Railway for seamless deployment.",
+    gitHubLink: "https://github.com/sachin-bhadoriya/Hill_View_Escape-Frontend-only",
+    liveLink: "https://hill-view-escape-frontend-only.vercel.app"
+  },
+  {
+    title: "Project Portfolio – Sachin Bhadoriya",
+    description: "Designed and deployed a project portfolio website to showcase my skills, contact information and other material. Built with React and Bootstrap 5, the site is fully responsive and optimized for all screen sizes. Hosted on Vercel with fast load times and smooth user experience.",
+    gitHubLink: "https://github.com/sachin-bhadoriya/my-portfolio",
+    liveLink: "http://sachin-bhadoriya.vercel.app"
+  },
+  {
+    title: "My Personal Portfolio Website",
+    description: "Designed and deployed a personal portfolio website using React with simple HTML and CSS, featuring an interactive Three.js animated background. The site showcases my projects, skills, contact information and my CV (with printing and export to pdf functionality and also it's created using HTML and CSS.), and includes a fully functional contact form powered by Node.js and Express APIs, with MongoDB used to store submitted data. The site is fully responsive across devices and delivers a smooth, engaging user experience.",
+    gitHubLink: "https://github.com/sachin-bhadoriya/sachin_bhadoriya_mern_stack_developer",
+    liveLink: "https://sachin-bhadoriya-mern-stack-develop.vercel.app"
+  },
+  {
+    title: "Here are my some Sample designs using Adobe Photoshop.",
+    liveLink: "https://drive.google.com/drive/folders/18N9Nh3xejMJWIkM8_rizgCqDR5UmvFX2?usp=sharing"
+  },
+]
+
+// cv project data
+export const CvDataSoftSkills = [
+  "Problem Solving & Analytical Thinking",
+  "Communication Skill",
+  "Leadership & Mentorship",
+  "Team Collaboration",
+  "Adaptability & Quick Learning",
+  "Creativity & Innovation"
+];
+
+// cv project education
+export const CvDataEducation = [
+  {
+    university: "Jiwaji University, Gwalior, M.P., India",
+    degAndPercentage: "Bachelor’s in Computer Science",
+    session: "2023-2026"
+  },
+  {
+    university: "Jawahar Navodaya Vidyalaya, Gwalior, Madhya Pradesh",
+    degAndPercentage: "CBSE Board (Class XII), 79%",
+    session: "2020-2021"
+  },
+]

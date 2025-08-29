@@ -1,34 +1,61 @@
+/* ---------- Print CSS ---------- */
 @media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
   body {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
     margin: 0;
     padding: 0;
-    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .cvPage {
-    width: 21cm !important;     /* A4 width */
-    min-height: 29.7cm !important;  /* A4 height */
+    box-shadow: none !important;
     margin: 0 auto !important;
-    padding: 50px !important;
-    box-shadow: none !important; /* Shadow print me nahi dikhna chahiye */
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
+    width: 210mm !important;
+    /* A4 exact width */
+    height: 297mm !important;
+    /* A4 exact height */
+    padding: 0 0 60mm 0 !important;
+    /* adjust spacing */
+    background: white;
+    page-break-inside: avoid;
+    page-break-before: always;
+    page-break-after: always;
   }
 
-  .importsBtns, 
-  .vanta-bg, 
-  .someOtherNonCvSection {
-    display: none !important; /* Buttons aur background ko hide kar do print ke time */
+  /* Print me sirf CV dikhana */
+  body * {
+    visibility: hidden;
+  }
+
+  .cvPage,
+  .cvPage * {
+    visibility: visible;
+  }
+
+  /* Backgrounds ya extra cheezein hide karna */
+  canvas,
+  .vanta-canvas,
+  .importsBtns {
+    display: none !important;
+  }
+
+  .cvPage:first-child {
+    margin-top: 0 !important;
+    /* First page normal */
+  }
+
+  .cvPage:not(:first-child) {
+    margin-top: 50px !important;
+    /* Next pages same top margin */
   }
 }
 
-
-.topMarginContainer {
-  margin-top: 50px;
-}
-
+/* ---------- Screen CSS ---------- */
 .mobileViewCv {
   width: 100%;
   height: 100%;
@@ -40,16 +67,14 @@
 }
 
 .cvPage {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  width: 21cm;
-  min-height: 29.7cm;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 50px auto;
   background: white;
-  margin: auto;
-  margin-bottom: 50px;
-  padding: 50px;
-  page-break-inside: auto;
-  break-inside: auto;
+  padding: 15mm;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  page-break-inside: auto;
 }
 
 .cvPage p {
@@ -98,7 +123,9 @@
 }
 
 .profileSection {
-  margin-top: 15px;
+  margin-bottom: 15px;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .profileSection .heading {

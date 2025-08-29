@@ -1,6 +1,6 @@
 import html2pdf from 'html2pdf.js';
 import { useRef, useState } from 'react';
-import { useReactToPrint } from "react-to-print";
+import { Link } from 'react-router-dom';
 import VantaBackgroundTwo from "../VantaBackgroundTwo";
 import "./Cv.css";
 import Profile from './cvComponents/Profile';
@@ -10,7 +10,7 @@ import WorkExp from './cvComponents/WorkExp';
 import Projects from './cvComponents/Projects';
 import SoftSkills from './cvComponents/SoftSkills';
 
-const Cv = () => {
+const Cvp = () => {
     const [isLoading, setIsLoading] = useState(true);
     const cvRef = useRef();
 
@@ -20,12 +20,12 @@ const Cv = () => {
             const element = cvRef.current;
 
             const opt = {
-                margin: [10, 0, 10, 0],
+                margin: 0,
                 filename: 'Sachin_Bhadoriya_CV.pdf',
                 image: { type: 'png', quality: 1 },
                 html2canvas: { scale: 3, useCORS: true },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['legacy'] }
+                pagebreak: { mode: ['css', 'legacy'] } 
             };
             html2pdf().set(opt).from(element).save();
             setIsLoading(true);
@@ -33,14 +33,13 @@ const Cv = () => {
     };
 
 
-    const handlePrinting = useReactToPrint({
-        contentRef: cvRef,
-        documentTitle: "Sachin_Bhadoriya_CV"
-    });
-
-
-
-
+    const handlePrinting = () => {
+        setIsLoading(false);
+        setTimeout(() => {
+            print();
+            setIsLoading(true);
+        }, 1000);
+    }
 
     return (
         <div style={{ height: "100%", width: "100%", overflow: "auto" }}>
@@ -57,7 +56,7 @@ const Cv = () => {
                 <div className="cvPage" ref={cvRef} style={{ background: "" }}>
                     <div className="insideCv" style={{ background: "" }}>
                         <Profile />
-                        <div className="contentDataCv">
+                        <div className="contentDataCv topMarginContainer">
                             {/* profile section */}
                             <div className="profileSection">
                                 <div className="heading borderBottom dmSerifDisplay">PROFILE</div>
@@ -65,10 +64,15 @@ const Cv = () => {
                                     Hardworking College Student seeking employment. Bringing forth a motivated attitude and a variety of powerful skills. Adept in various social media platforms and office technology programs.
                                 </p>
                             </div>
+                            {/* education */}
                             <Education />
+                            {/* skills */}
                             <Skills />
+                            {/* work experience */}
                             <WorkExp />
+                            {/* projects */}
                             <Projects />
+                            {/* soft skills */}
                             <SoftSkills />
                         </div>
                     </div>
@@ -79,4 +83,4 @@ const Cv = () => {
     )
 }
 
-export default Cv;
+export default Cvp

@@ -1,21 +1,7 @@
 import VantaBackground from "../VantaBackgroundTwo";
 import "./CssFile/HomeTwo.css";
-import ExperienceContainer from "./Parts/ExperienceContainer";
 import RowImageContainer from "./Parts/RowImageContainer";
-import SocialIcons from "./Parts/SocialIcons";
-import ButnsMain from "./Parts/ButnsMain";
-
-// Your skills data:
-export const SkillsData = {
-  heading: "Skills",
-  categories: {
-    frontend: ["HTML", "CSS", "JavaScript", "Bootstrap", "React.js"],
-    backend: ["Node.js", "Express.js", "React Native"],
-    database: ["MongoDB"],
-    tools: ["VS Code", "Vercel", "Render", "Railway"],
-    others: ["MS Office", "Adobe Photoshop", "Canva"]
-  }
-};
+import { SkillsData } from "./data";
 
 const Skills = () => {
   return (
@@ -28,28 +14,23 @@ const Skills = () => {
           </div>
           <div className="col-md-8 secondPfTxt">
             <div className="txtonly">
-              <h2 className="name notoSerifDisplay" style={{marginBottom: "10px"}}>{SkillsData.heading}</h2>
-              
-              {/* Skill categories display */}
-              {Object.entries(SkillsData.categories).map(([category, skills]) => (
-                <div key={category} className="mb-3">
-                  <h5 className="text-capitalize">{category}</h5>
+              <h2 className="name notoSerifDisplay" style={{ marginBottom: "10px" }}>Skills</h2>
+              {SkillsData.map((i, index) => (
+                <div key={index} className="mb-3">
+                  <h5 className="text-capitalize">{i.title}</h5>
                   <ul className="list-inline">
-                    {skills.map((skill, index) => (
-                      <li key={index} className="list-inline-item badge bg-secondary me-2 mb-2 p-2">
-                        {skill}
+                    {i.skill.map((s, idx) => (
+                      <li key={idx} className="list-inline-item badge bg-secondary me-2 mb-2 p-2">
+                        {s}
                       </li>
                     ))}
                   </ul>
                 </div>
               ))}
             </div>
-            {/* <SocialIcons /> */}
-            {/* <ButnsMain /> */}
           </div>
         </div>
       </div>
-      {/* <ExperienceContainer /> */}
     </div>
   );
 };
