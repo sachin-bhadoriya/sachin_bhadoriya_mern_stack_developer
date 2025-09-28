@@ -38,11 +38,11 @@ I’ve built and deployed full-stack projects like a hotel booking system with l
 export const SkillsData = [
   {
     title: "Frontend",
-    skill: [" HTML", " CSS", " JavaScript", " Bootstrap", " React.js"]
+    skill: [" HTML", " CSS", " JavaScript", " Bootstrap", " React.js", " React Native"]
   },
   {
     title: "Backend & Programming Language",
-    skill: [" Node.js", " Express.js", " React Native"]
+    skill: [" Node.js", " Express.js"]
   },
   {
     title: "Database",
