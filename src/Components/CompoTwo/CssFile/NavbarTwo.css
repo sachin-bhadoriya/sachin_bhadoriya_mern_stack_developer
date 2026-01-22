@@ -1,0 +1,187 @@
+.mobileDrawerTwo {
+  display: none;
+}
+
+.navTwoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+  color: #ffffff;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navTwoContainer ul li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navTwoContainer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navTwoContainer ul li:hover {}
+
+.navTwoContainer ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 50%;
+  width: 100%;
+  background-color: #F8F8FF;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.navTwoContainer ul li:hover::after {
+  transform: scaleX(1);
+  /* background-color: #973b59; */
+}
+
+.navTwoContainer ul {
+  display: flex;
+  margin: auto 0;
+  gap: 40px;
+}
+
+.linksMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.linksMain ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CvBtn button {
+  padding: 3px 25px;
+  border-radius: 3px;
+  outline: none;
+  background-color: #973b59;
+  border: 1px solid #973b59;
+  color: white;
+  transition: all 0.5s;
+}
+.CvBtn button:active {
+  scale: 0.8;
+}
+
+.CvBtn button:hover {
+  transform: scale(1);
+  background-color: #602438;
+  border: 1px solid #602438;
+  color: rgb(212, 212, 212);
+  /* box-shadow: 0 0 20px #ffffff !important; */
+}
+
+.logo {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.linksMenu {
+  display: none;
+}
+
+.linksMenu img {
+  width: 40px;
+  filter: brightness(0) saturate(100%) invert(110%) sepia(81%) hue-rotate(320deg) saturate(600%) brightness(120%);
+
+}
+
+@media screen and (max-width: 768px) {
+  .mobileDrawerTwo {
+    display: block;
+  }
+
+  .navTwoContainer {
+    padding: 10px 20px;
+  }
+
+  .navTwoContainer ul {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .linksMenu {
+    display: block;
+  }
+}
+
+/* Mobile Drawer Styles */
+
+.mobileMenuIconCross:hover {
+  transition: all 0.3s ease;
+  translate: rotate(180);
+}
+
+.mobileDrawerTwo {
+  position: absolute;
+  top: 0;
+  left: -270px;
+  width: 250px;
+  height: 100vh;
+  background-color: #23153c;
+  transition: left 0.4s ease-in-out;
+  padding-top: 70px;
+  z-index: 9999;
+}
+
+.mobileDrawerTwo.open {
+  left: 0;
+}
+
+.mobileDrawerTwo ul {
+  list-style: none;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mobileDrawerTwo ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* .mobileDrawerTwo li:hover{
+  background-color: #0000004e;
+} */
+
+/* Responsive: Hide desktop menu and show mobile icon */
+@media screen and (max-width: 768px) {
+
+  .mobileDrawerTwo {
+    display: block;
+  }
+
+
+  .desktopOnly {
+    /* display: none; */
+  }
+
+  .linksMenu {
+    display: block;
+    z-index: 10000;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
