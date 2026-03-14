@@ -1,0 +1,82 @@
+.project-header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-header ul {
+    display: flex;
+    font-family: montserrat;
+    flex-wrap: wrap;
+    font-size: 14px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header ul li {
+    list-style: none;
+    background-color: rgb(50, 125, 205);
+    padding: 5px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.project-header ul li:hover {
+    background-color: rgba(50, 125, 205, 0.829);
+}
+
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    position: relative;
+    width: 300px;
+    aspect-ratio: 2.5/1.5;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    padding: 3px 5px;
+    box-sizing: border-box;
+}
+
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.407);
+}
+
+.hover-link-project {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    display: none;
+    aspect-ratio: 2.5/1.5;
+    border-radius: 8px;
+    background-color: rgb(222, 216, 216);
+    cursor: pointer;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    font-family: montserrat;
+    text-align: center;
+    padding: 27px;
+}
+
+.hover-link-project span,
+.hover-link-project span a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.project-card:hover .hover-link-project {
+    display: block;
+}
