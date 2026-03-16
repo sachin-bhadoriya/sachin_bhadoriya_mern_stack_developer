@@ -184,6 +184,7 @@ export const projectsData = [
     img: "yes",
     id: "3",
     github: "https://github.com/sachin-bhadoriya/Auth-Routes",
+    link: "https://github.com/sachin-bhadoriya/Auth-Routes",
     live: "https://img.freepik.com/free-vector/back-end-typographic-header-software-development-process-website-interface-design-improvement-programming-coding-it-profession-isolated-flat-vector-illustration_613284-210.jpg?"
   },
   {
@@ -192,6 +193,7 @@ export const projectsData = [
     id: "4",
     github: "https://github.com/sachin-bhadoriya/ReactNative-FoodRecipe_App",
     img: "yes",
+    link: "https://drive.google.com/drive/folders/16mbmgljy_wP2eHfQUZqHc5nDhO-Ig5Wx?usp=sharing",
     live: "https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?"
   }
 ]

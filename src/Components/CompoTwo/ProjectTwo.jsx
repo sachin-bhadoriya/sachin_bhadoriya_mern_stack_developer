@@ -30,7 +30,7 @@ const ProjectTwo = () => {
               <b>Type :</b> <span>{item.type} </span><br />
               <b>Topic :</b><span> {item.topic} </span><br />
               <b>Github :</b> <span><Link to={item.github}>Click Here...</Link></span> <br />
-              <b>Live :</b> <span><Link to={item.live}>Click Here...</Link></span>
+              {item.img == "no" ? <><b>Live :</b> <span><Link to={item.live}>Click Here...</Link></span></> : <><b>Live :</b> <span><Link to={item.link}>Click Here...</Link></span></>}
             </div>
             {item.img == "no" ?
               <>
