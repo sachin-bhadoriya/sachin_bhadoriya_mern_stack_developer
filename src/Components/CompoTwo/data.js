@@ -172,6 +172,14 @@ export const projectsData = [
   },
   {
     type: "Frontend Project",
+    img: "no",
+    id: "2",
+    topic: "Freelancing Website",
+    github: "https://github.com/sachin-bhadoriya/Tecklog",
+    live: "https://tecklog.vercel.app/"
+  },
+  {
+    type: "Frontend Project",
     id: "2",
     topic: "Hotel Website",
     github: "http://github.com/sachin-bhadoriya/Hill_View_Escape_Second",
