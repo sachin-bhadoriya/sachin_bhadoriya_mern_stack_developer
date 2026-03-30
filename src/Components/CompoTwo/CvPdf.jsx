@@ -1,6 +1,6 @@
 import VantaBackgroundTwo from "../VantaBackgroundTwo";
 import "./Cv.css";
-import myCV from "../../assets/Sachin_Bhadoriya_Frontend_Developer_Resume.pdf"
+import myCV from "../../assets/sachin-bhadoriya-frontend-dev.pdf"
 
 const Cv = () => {
     return (
