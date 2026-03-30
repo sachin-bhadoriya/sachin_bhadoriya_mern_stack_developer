@@ -18,7 +18,11 @@
   background-color: #a11e49;
   color: #fff;
 }
-
+.bg-secondary{
+  --bs-bg-opacity: 1;
+    background-color: rgb(255 255 255 / 26%) !important;
+    backdrop-filter: blur(3px);
+}
 
 /* WebKit browsers */
 *::-webkit-scrollbar {
