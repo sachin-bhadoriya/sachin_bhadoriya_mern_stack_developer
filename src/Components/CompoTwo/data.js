@@ -163,6 +163,14 @@ export const projectsData = [
     img: "no",
   },
   {
+    type: "Full Stack Project",
+    id: "5",
+    topic: "Full Stack Notes App with Auth and Separate user notes.",
+    github: "https://github.com/sachin-bhadoriya/Notes-app",
+    live: "https://notes-app-blond-seven.vercel.app/",
+    img: "no",
+  },
+  {
     type: "Frontend Project",
     img: "no",
     id: "2",
