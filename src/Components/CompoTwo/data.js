@@ -164,7 +164,7 @@ export const projectsData = [
   },
   {
     type: "Full Stack Project",
-    id: "5",
+    id: "1",
     topic: "Full Stack Notes App with Auth and Separate user notes.",
     github: "https://github.com/sachin-bhadoriya/Notes-app",
     live: "https://notes-app-blond-seven.vercel.app/",
