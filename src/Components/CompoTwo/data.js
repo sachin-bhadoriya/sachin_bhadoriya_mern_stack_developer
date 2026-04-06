@@ -16,7 +16,8 @@ Hi, I'm Sachin Bhadoriya, a Frontend Developer who loves building fast, responsi
 
 I also have working knowledge of Node.js, Express, and MongoDB, which helps me understand how full-stack applications work and seamlessly connect frontend with backend systems.
 
-I'm passionate about creating clean UI/UX experiences and continuously learning new technologies to build better digital products.  education: [
+I'm passionate about creating clean UI/UX experiences and continuously learning new technologies to build better digital products. `
+    education: [
     {
       degree: "Bachelor’s in Computer Science",
       institute: "Jiwaji University, Gwalior, M.P.",
