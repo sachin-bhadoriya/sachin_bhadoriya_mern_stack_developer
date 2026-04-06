@@ -12,10 +12,11 @@ export const HeroData = {
 export const AboutData = {
   heading: "About Me",
   description: `
-I'm Sachin Bhadoriya, a dedicated B.Sc. Computer Science student at Jiwaji University with a strong passion for frontend and backend development.\n 
-I specialize in crafting responsive websites and applications using React.js, Node.js, and MongoDB. I also have hands-on experience with design tools like Adobe Photoshop and Canva, making me a creative tech enthusiast.\n
-I’ve built and deployed full-stack projects like a hotel booking system with live email notifications. My goal is to keep learning and building impactful projects that combine functionality with clean UI/UX.`,
-  education: [
+Hi, I'm Sachin Bhadoriya, a Frontend Developer who loves building fast, responsive, and user-friendly web applications using React.js and modern JavaScript.
+
+I also have working knowledge of Node.js, Express, and MongoDB, which helps me understand how full-stack applications work and seamlessly connect frontend with backend systems.
+
+I'm passionate about creating clean UI/UX experiences and continuously learning new technologies to build better digital products.  education: [
     {
       degree: "Bachelor’s in Computer Science",
       institute: "Jiwaji University, Gwalior, M.P.",
